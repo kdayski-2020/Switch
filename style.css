@@ -1,0 +1,20 @@
+.info-header-tab {
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+
+.info-tabcontent {
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}

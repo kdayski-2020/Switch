@@ -4,7 +4,7 @@ window.addEventListener('DOMContentLoaded', function () { // после прог
     let tab = document.querySelectorAll('.info-header-tab'), // массив табов
         info = document.querySelector('.info-header'), // родитель массива табов
         tabContent = document.querySelectorAll('.info-tabcontent'); // массив всех блоков
-    
+
     function hideTabContent(a) { // функция с передачей переменной
         for (let i = a; i < tabContent.length; i++) { // цикл начинающийся с переданой переменной, переберающий все блоки
             tabContent[i].classList.remove('show'); // убирается класс show у каждого блока начиная с номера переданной переменной
@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', function () { // после прог
         }
     }
 
-    info.addEventListener('click', function(event) { // при клике родителя
+    info.addEventListener('click', function (event) { // при клике родителя
         let target = event.target; // отслеживание места клика
         if (target && target.classList.contains('info-header-tab')) { // если кликнул и кликнул на какой-либо таб
             for (let i = 0; i < tab.length; i++) { // перебор табов
